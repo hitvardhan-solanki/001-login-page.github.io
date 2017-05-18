@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Header Tag -->
+  <title>Login page</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+
+  <!-- My Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="login-page ">
+    <div class="btn-block btn-success btn-success-custom" data-toggle="modal" data-target="#login-modal">
+      OPEN THE LOGIN DIALOG
+    </div>
+    <div class="form modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <form class="login-form">
+        <input type="text" placeholder="username" required="true" />
+        <input type="password" placeholder="password" required="true" />
+        <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
